@@ -35,7 +35,7 @@ class BookInfoAdmin(admin.ModelAdmin):
     fieldsets = (
         ('基本', {'fields':['name', 'pub_date']}),
         ('高级',{
-            'fields':['readcount', 'commentcount'],
+            'fields':['readcount', 'commentcount','image'],
             'classes':('collapse',) # 是否折叠显示
         })
     )
