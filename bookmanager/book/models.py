@@ -15,7 +15,8 @@ class BookInfo(models.Model):
 
     class Meta:
         db_table = 'bookinfo'  # 指明数据库表名
-        verbose_name = '图书'  # 在admin站点中显示的名称
+        verbose_name_plural = '图书'
+        # verbose_name = '图书'  # 在admin站点中显示的名称
 
     #定义一个函数
     def title(self):
@@ -42,7 +43,7 @@ class PeopleInfo(models.Model):
 
     class Meta:
         db_table = 'peopleinfo'
-        verbose_name = '人物信息'
+        verbose_name_plural = '人物信息'
 
     def readcount(self):
         return self.book.readcount
