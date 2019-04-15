@@ -46,6 +46,9 @@ class BookInfoAdmin(admin.ModelAdmin):
 
 
 admin.site.register(BookInfo, BookInfoAdmin)
+admin.site.site_header = " Hamdi's 书城 "
+admin.site.site_title = '磊磊书城MIS'
+admin.site.index_title = '欢迎来到磊磊书城MIS！'
 # admin.site.register(PeopleInfo)
 
 
